@@ -3,10 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>My Website - About</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
 </head>
 <body>
-<h1>Christina Blye</h1>
-<p>I am a first-year Information Technology student who enjoys learning about cybersecurity, networking, and programming. I love exploring how systems work, solving technical problems, and building small projects that improve my skills. My main interests include data science, ethical hacking, and computer networks, and I hope to pursue a future career as a cybersecurity analyst where I can help protect systems and data.</p>
+  <div class="container">
+    <h1>Christina Blye</h1>
+    <p>
+      I am a first-year Information Technology student who enjoys learning about
+      cybersecurity, networking, and programming. I love exploring how systems
+      work, solving technical problems, and building small projects that improve
+      my skills. My main interests include data science, ethical hacking, and
+      computer networks, and I hope to pursue a future career as a cybersecurity
+      analyst where I can help protect systems and data.
+    </p>
+    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Image">
+  </div>
 </body>
-</html>
