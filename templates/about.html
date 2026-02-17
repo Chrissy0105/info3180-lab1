@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>My Website - About</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+  <meta charset="UTF-8">
+  <title>My Website - About</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
 </head>
 <body>
   <div class="container">
+    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Image" class="profile-img">
     <h1>Christina Blye</h1>
     <p>
       I am a first-year Information Technology student who enjoys learning about
@@ -16,6 +17,6 @@
       computer networks, and I hope to pursue a future career as a cybersecurity
       analyst where I can help protect systems and data.
     </p>
-    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Image">
   </div>
 </body>
+</html>
